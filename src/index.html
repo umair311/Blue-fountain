@@ -5,9 +5,22 @@
   <title>Admin</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
+
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
+<body class="hold-transition sidebar-mini layout-fixed">
+  
   <app-root></app-root>
+  <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+<script>
+  $(function () {
+    // Summernote
+    $('.textarea').summernote()
+  })
+</script>
+  
 </body>
 </html>
