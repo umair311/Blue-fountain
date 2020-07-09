@@ -130,7 +130,7 @@ function verifyToken(req,res,next){
             var last_name = request.body.last_name;
             var email = request.body.email;
             var password = request.body.password;
-            mysqlconnection.query("SELECT *FROM login WHERE email=? AND password=?", [email,password], function (error, results, fields) {
+            mysqlconnection.query("SELECT *FROM login WHERE email=?", [email], function (error, results, fields) {
         
                 if (results.length > 0) {
               
